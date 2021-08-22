@@ -12,6 +12,11 @@ Create table Contact with primary partition key id
 
 2. Lambda function
 Create function ContactEmail
+Add the following Environment Variables:
+
+  Key                    Value
+- [DYNAMODB_TABLE]	 [name of the dynamodDB table]
+- [SENDER_EMAIL]	 [your email]
 
 3. IAM role
 Create IAM role with a policy to allow for email send, put to dynamoDB and CloudWatch logs.
